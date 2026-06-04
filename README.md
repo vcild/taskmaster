@@ -1,4 +1,4 @@
-# TaskMaster
+#  Private TaskMaster
 
 Repository to demonstrate the functionality of taskmaster, a simple application with CRUD functionalities that satisfy the needs of a user for scheduling needs.
 
@@ -15,3 +15,30 @@ Repository to demonstrate the functionality of taskmaster, a simple application 
 Python 3.10 or newer (Testing version ran on 3.10 and 3.14.5)
 
 Recommended but not required: Dateparser for natural-language dates, otherwise it runs on strict date formats.
+
+# Indicative User Menu
+A simple preview of what the user is greeted with when running the program
+```
+========================================
+ TaskMaster
+========================================
+  1. Add a task
+  2. List all tasks
+  3. Filter / search
+  4. Edit a task
+  5. Complete a task
+  6. Delete a task
+  7. Clear completed
+  0. Quit
+```
+
+# Data Storing
+By default stored in '~/.taskmaster/tasks.db'
+To use an external/different file, set 'TASKMASTER_DB' variable:
+
+e.g in bash: TASKMASTER_DB=~/work-tasks.db python main.py
+
+# Testing
+Use standard library, no extra tooling required:
+
+e.g in bash: python -m unittest discover -s tests
