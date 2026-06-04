@@ -39,6 +39,6 @@ To use an external/different file, set 'TASKMASTER_DB' variable:
 e.g in bash: TASKMASTER_DB=~/work-tasks.db python main.py
 
 # Testing
-Use standard library, no extra tooling required:
+Uses standard library, no extra tooling required:
 
 e.g in bash: python -m unittest discover -s tests
